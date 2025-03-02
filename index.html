@@ -1,17 +1,127 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            The Recipe Rack
-         </title>
-         <link rel="stylesheet" type="text/css" href="index.css"/>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Recipe Rack</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">The Recipe Rack</h1>
+
+        <!-- Search Recipes Input -->
+        <input type="text" id="recipe" placeholder="Search recipes">
+        <img src="Unknown.jpg" id="logo" height="150" />
+        <div class="button-container">
+            <button id="search-button" onclick="searchRecipes()">Search Recipes</button>
+            <button id="add" onclick="addRecipe()">Add Recipe</button>
+            <button id="home" onclick="getHome()">Home</button>
+        </div>
+
+        <!-- User inputted display (This is where recipes will appear) -->
+        <div id="recipe-list">
+            <h2>Recipes:</h2>
+            <!-- Recipes will be dynamically added here -->
+             <p id="recipe-instructions"></p>
+        </div>
+
+        <!-- Recipe Rack Images -->
+        <div class="images">
+            <img src="Unknown-2-removebg-preview-4.png" id="rack" height="300" />
+            <img src="Unknown-2-removebg-preview-5.png" id="rack1" height="300" />
+            <img src="Unknown-2-removebg-preview-6.png" id="rack2" height="300" />
+        </div>
         
-    <body>
-        
-    </body>
-
-
-
-
+        <div>
+            <img src="imgres.jpg" id="burger" height="300"/>
+            <!--<img src="url.jpg" id="cookies" height="300"/> -->
+        </div>
+            <h3 class="cheeseburger">American Cheeseburger:</h3>
+        <section class="ul">
+            <h4 class="ingredients2">Ingredients:</h4>
+        <ul>
+            <li>1 lb (450g) ground beef</li>
+            <li>1/2 lb (225g) ground sirloin</li>
+            <li>2 tbsp (30 ml) steak sauce</li>
+            <li>2 egg yolks</li>
+            <li>2 tomatoes</li>
+            <li>Red onion, thinly sliced</li>
+            <li>Dill pickle </li>   
+            <li>Salt and pepper</li>
+            <li>4 American cheese</li>
+            <li>4 lettuce leaves</li>
+        </ul>
+            <h5 class="instructions2">Instructions:</h5>
+        </section>          
+        <section class="Instructions">
+            <ol>
+                <li>Mix the ground meats, steak sauce, egg yolks, salt, and pepper</li>
+                <li>Add a small pat of butter inside each patty before grilling</li>
+                <li>Form the patties and grill until cooked through</li>
+                <li>Top with American cheese, lettuce, tomato, onion, and pickles</li>
+            </ol>
+        </section>
+    </div>
+        <div hidden>
+            <header>
+                <h1> Sushi</h1>
+            </header>
+            <section class="Ingredients">
+                <h2>Ingredients</h2>
+            <ul>
+                <li>2 cups (400g) sushi rice</li>
+                <li>2 tbsp rice vinegar</li>
+                <li>1 tbsp sugar</li>
+                <li>1/2 tsp salt</li>                                   
+                <li>8 oz (225g) sashimi-grade fish (tuna, salmon, etc.)</li>
+                <li>Wasabi paste</li>
+                <li>Soy sauce for serving</li>
+            </ul>
+            </section>
+    
+            <section class="Instructions">
+                <h2>Instructions</h2>
+            <ol>
+                <li>Cook sushi rice according to package instructions. Mix rice vinegar, sugar, and salt in a small bowl</li>
+                <li>Spread cooked rice in a large, flat container. Sprinkle vinegar mixture over rice and fold gently to combine. Let cool to room temperature</li>                    <li>Slice fish into thin pieces, about 2 inches long and 1 inch wide</li>
+                <li>Wet your hands with water and vinegar mixture. Take about 2 tablespoons of rice and shape into an oval</li>
+                <li>Place a small amount of wasabi on top of the rice</li>
+                <li>Lay a slice of fish over the rice, pressing gently to adhere</li>
+                <li>Using your thumb and forefinger, gently press the sides of the fish to curve it around the rice</li>
+                <li>Serve with soysauce<li>
+            </ol> 
+            </section>
+        </div>
+        <div hidden> 
+            <h3 class="mandazi">Traditional Kenyan Mandazi:</h3>
+        <section class="recipe-content">
+            <h4 class="ingredients">Ingredients</h4>
+            <ul>
+                <li>3 cups (375g) all-purpose flour</li>
+                <li>1/2 cup (100g) sugar</li>
+                <li>2 tsp baking powder</li>
+                <li>1/2 tsp salt</li>
+                <li>1/2 tsp ground cardamom</li>
+                <li>1/2 cup (120ml) coconut milk</li>
+                <li>1 large egg</li>
+                <li>2 tbsp vegetable oil (plus more for frying)</li>
+                <li>Warm water as needed</li>
+                <li>Powdered sugar or chocolate for topping (optional)</li>
+            </ul>
+            <h5 class="instructions">Instructions</h5>
+            <ol>
+                <li>In a large bowl, mix flour, sugar, baking powder, salt, and cardamom.</li>
+                <li>In a separate bowl, whisk together coconut milk, egg, and 2 tbsp vegetable oil.</li>
+                <li>Add wet ingredients to dry ingredients, mixing to form a soft dough. Add warm water as needed if the dough is too dry.</li>
+                <li>Knead the dough for about 5 minutes until smooth. Cover and let rest for 30 minutes.</li>
+                <li>Roll out the dough to about 1/2 cm thickness. Cut into triangles or desired shapes.</li>
+                <li>Heat oil in a deep pan to 350°F (175°C).</li>
+                <li>Fry the mandazi in batches until golden brown, about 2-3 minutes per side.</li>
+                <li>Drain on paper towels and serve warm, optionally dusted with powdered sugar or topped with chocolate.</li>
+            </ol>
+        </section>
+        <div>
+    <script src="index.js"></script> <!-- Link to JavaScript file -->
+</body>
 </html>
